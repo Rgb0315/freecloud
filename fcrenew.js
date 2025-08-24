@@ -3,8 +3,15 @@ import fetch from "node-fetch";
 // 从环境变量读取配置
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-const FREECLOUD_ACCOUNTS = process.env.FREECLOUD_ACCOUNTS;
-const FREECLOUD_API_KEY = process.env.FREECLOUD_API_KEY;
+const FREECLOUD_ACCOUNTS =[
+  {
+    "type": "nat.freecloud",
+    "username": "rgb0315@126.com",
+    "password": "Rgb315524",
+    "port": "2395"
+  }
+];
+const FREECLOUD_API_KEY = 5WEW14PSONWV4021;
 const DELAY_SECONDS = process.env.DELAY_SECONDS;
 const DELAY_TYPE = process.env.DELAY_TYPE;
 
